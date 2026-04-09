@@ -1,0 +1,34 @@
+[2026-04-09T16:26:36Z] === ENRICH ITERATION 1 START | repo=rust-lang/futures-rs sha=8be72dee ===
+[2026-04-09T16:26:36Z] [iter=1] PHASE START: enrich repo=rust-lang/futures-rs sha=8be72dee runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/8be72dee-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/8be72deed0014a41117856beb8f03f7eb8bd023d.nq.gz
+[2026-04-09T16:26:36Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-09T16:26:42Z] [iter=1] AST store loaded triples=743132 load_secs=6 mem_mb=784 MB
+[2026-04-09T16:26:42Z] [iter=1] Step 2: Finding LSP targets mem_mb=784 MB
+[2026-04-09T16:26:44Z] [iter=1] LSP targets found call_sites=5622 imports=351 extends=0 implements=485 secs=1
+[2026-04-09T16:26:45Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=784 MB
+[2026-04-09T16:26:49Z] [iter=1] Position index built positions=51143 nodes_with_types=60501 secs=4 mem_mb=784 MB
+[2026-04-09T16:26:49Z] [iter=1] Step 3: Starting LSP resolution mem_mb=784 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T16:26:49Z] [iter=1] Resolving target type target_type=call_site count=5622
+[2026-04-09T16:27:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=1 resolved=13 errors=52 current=src/stream/take.rs
+[2026-04-09T16:27:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=3 resolved=116 errors=234 current=tests/stream.rs
+[2026-04-09T16:28:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=4 resolved=260 errors=494 current=tests/all.rs
+[2026-04-09T16:30:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.0 files_done=5 resolved=398 errors=920 current=src/future/mod.rs
+[2026-04-09T16:31:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=8 resolved=453 errors=1056 current=futures-cpupool/tests/smoke.rs
+[2026-04-09T16:31:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.4 files_done=12 resolved=667 errors=1282 current=benches/bilock.rs
+[2026-04-09T16:33:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=18 resolved=829 errors=1608 current=tests/shared.rs
+[2026-04-09T16:33:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=19 resolved=854 errors=1748 current=src/sink/send_all.rs
+[2026-04-09T16:34:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.8 files_done=25 resolved=1006 errors=1920 current=src/future/select_ok.rs
+[2026-04-09T16:34:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.3 files_done=33 resolved=1105 errors=2055 current=src/sink/mod.rs
+[2026-04-09T16:35:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=36 resolved=1285 errors=2183 current=src/sink/from_err.rs
+[2026-04-09T16:36:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.4 files_done=48 resolved=1519 errors=2324 current=tests/unfold.rs
+[2026-04-09T16:36:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=67 resolved=1737 errors=2451 current=src/sink/flush.rs
+[2026-04-09T16:37:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=89 resolved=1940 errors=2587 current=tests/recurse.rs
+[2026-04-09T16:37:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.0 files_done=114 resolved=2097 errors=2716 current=src/task_impl/std/task_rc.rs
+[2026-04-09T16:37:43Z] [iter=1] Target type resolved target_type=call_site resolved=2163 errors=2756 secs=655 mem_mb=784 MB
+[2026-04-09T16:37:43Z] [iter=1] Resolving target type target_type=import_statement count=351
+[2026-04-09T16:37:59Z] [iter=1] Target type resolved target_type=import_statement resolved=256 errors=0 secs=15 mem_mb=784 MB
+[2026-04-09T16:37:59Z] [iter=1] Resolving target type target_type=implements_clause count=485
+[2026-04-09T16:38:04Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=11.5 files_done=1 resolved=2 errors=0 current=src/future/flatten_stream.rs
+[2026-04-09T16:38:12Z] [iter=1] Target type resolved target_type=implements_clause resolved=372 errors=0 secs=14 mem_mb=784 MB
+[2026-04-09T16:38:29Z] [iter=1] Step 5: Writing final enrichment file triples=49805
+[2026-04-09T16:38:30Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/8be72deed0014a41117856beb8f03f7eb8bd023d.nq.gz size_kb=946
+[2026-04-09T16:38:30Z] [iter=1] PHASE END: enrich elapsed_s=713 elapsed_min=11.9 total_triples=49805
