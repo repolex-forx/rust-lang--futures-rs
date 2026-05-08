@@ -567,8 +567,9 @@
     {
       "@id": "https://repolex.ai/r/rust-lang/futures-rs/commit/6bb7937348f8fe777043c50b3062101f6275d88c",
       "git:hexsha": "6bb7937348f8fe777043c50b3062101f6275d88c",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "futures-cpupool-0.1.5"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "futures-cpupool-0.1.5",
+      "repolex:parsedAt": "2026-05-08T19:14:12.888369+00:00"
     },
     {
       "@id": "https://repolex.ai/r/rust-lang/futures-rs/commit/3a57a566f715fd9715d510b347fae29332179335",
