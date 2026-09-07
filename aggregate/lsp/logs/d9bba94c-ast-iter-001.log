@@ -1,0 +1,7 @@
+[2026-09-07T06:07:47Z] === AST ITERATION 1 START | repo=rust-lang/futures-rs sha=d9bba94c ===
+[2026-09-07T06:07:47Z] [iter=1] PHASE START: ast repo=rust-lang/futures-rs sha=d9bba94c
+[2026-09-07T06:07:47Z] [iter=1] Building AST aggregate chunks
+[2026-09-07T06:10:12Z] [iter=1] AST chunks built count=1 triples=1727237
+[2026-09-07T06:10:12Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/d9bba94c239daa1175a5bb2958f37a5c72db3f6a/.complete
+[2026-09-07T06:10:12Z] [iter=1] PHASE END: ast elapsed_s=145 elapsed_min=2.4
+[2026-09-07T06:10:12Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
